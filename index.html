@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
+
 <head>
-    <meta charset="utf-8">
-    <title>frontend-engineer-exercise</title>
-    <!--    お好みのreset cssを使用しても構いません。-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css"/>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【株式会社ラボル スキルテスト】商品一覧</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            金額<span id="food-average-price"><!-- 数字 --></span>円
+    <div class="page-header">
+        <div class="page-header-inner">
+            <div class="filter-group">
+                <select id="productTypeFilter">
+                    <option value="ALL">全て</option>
+                    <option value="FOOD">フード</option>
+                    <option value="DRINK">ドリンク</option>
+                </select>
+                <button id="buttonA" class="btn btn-primary">Button A</button>
+            </div>
+            <button id="buttonB" class="btn btn-secondary">Button B</button>
         </div>
-    </header>
-    <h1>FOOD&DRINK</h1>
-    <ul id="product-list">
-        <!-- li -->
-    </ul>
-    <script src="./app.js"></script>
+    </div>
+
+    <div class="container">
+        <div class="app-content"></div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
